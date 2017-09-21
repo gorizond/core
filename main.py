@@ -22,7 +22,7 @@ async def wshandler(request):
 
 
 app = web.Application()
-app.router.add_get('/ws', wshandler)
+app.router.add_get('/hcsr04', wshandler)
 app.router.add_get('/', handle)
 app.router.add_get('/{name}', handle)
 
